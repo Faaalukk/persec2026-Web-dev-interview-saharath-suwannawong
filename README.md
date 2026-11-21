@@ -8,7 +8,9 @@ Repository นี้เก็บคำตอบของโจทย์สัม
 .
 ├── README.md
 ├── question1/
-│   └── validString.ts         # Valid Parentheses
+│   ├── prompt.md              # บันทึก prompt และ answer
+│   ├── validString.ts         # function isValid (Valid Parentheses)
+│   └── validString.test.ts    # unit test
 ├── question2/
 │   ├── prompt.md              # บันทึก prompt และ answer
 │   ├── sortString.ts          # function sortCodes
@@ -33,7 +35,7 @@ Repository นี้เก็บคำตอบของโจทย์สัม
 
 | ข้อ | หัวข้อ | Code | Prompt log |
 |-----|-------|------|------------|
-| 1 | Valid Parentheses | [`question1/validString.ts`](question1/validString.ts) | ยังไม่มี |
+| 1 | Valid Parentheses | [`question1/validString.ts`](question1/validString.ts) | [`question1/prompt.md`](question1/prompt.md) |
 | 2 | Sort Codes (prefix + number + suffix) | [`question2/sortString.ts`](question2/sortString.ts) | [`question2/prompt.md`](question2/prompt.md) |
 | 3 | Autocomplete (เรียงตามตำแหน่งที่เจอ) | [`question3/autocomplete.ts`](question3/autocomplete.ts) | [`question3/prompt.md`](question3/prompt.md) |
 | 4 | Modern Roman Numerals | [`question4/romanNumerals.ts`](question4/romanNumerals.ts) | [`question4/prompt.md`](question4/prompt.md) |
@@ -93,7 +95,8 @@ Repository นี้เก็บคำตอบของโจทย์สัม
 
 ```bash
 # Question 1
-node question1/validString.ts
+node question1/validString.ts               # demo
+node --test question1/validString.test.ts   # unit test
 
 # Question 2
 node question2/sortString.ts                # demo
